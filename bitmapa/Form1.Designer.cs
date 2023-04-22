@@ -78,7 +78,7 @@
             this.odbicie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.odbicie.Location = new System.Drawing.Point(554, 192);
             this.odbicie.Name = "odbicie";
-            this.odbicie.Size = new System.Drawing.Size(191, 54);
+            this.odbicie.Size = new System.Drawing.Size(191, 53);
             this.odbicie.TabIndex = 3;
             this.odbicie.Text = "ODBICIE LUSTRZANE I";
             this.odbicie.UseVisualStyleBackColor = true;
