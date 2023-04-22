@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.WYSZUKAJ = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.OBROT = new System.Windows.Forms.Button();
+            this.odbicie = new System.Windows.Forms.Button();
+            this.DWAODBICIE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +59,43 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // OBROT
+            // 
+            this.OBROT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OBROT.BackgroundImage")));
+            this.OBROT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.OBROT.Location = new System.Drawing.Point(553, 119);
+            this.OBROT.Name = "OBROT";
+            this.OBROT.Size = new System.Drawing.Size(192, 48);
+            this.OBROT.TabIndex = 2;
+            this.OBROT.Text = "OBRÓT O 90";
+            this.OBROT.UseMnemonic = false;
+            this.OBROT.UseVisualStyleBackColor = true;
+            this.OBROT.Click += new System.EventHandler(this.OBROT_Click);
+            // 
+            // odbicie
+            // 
+            this.odbicie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("odbicie.BackgroundImage")));
+            this.odbicie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odbicie.Location = new System.Drawing.Point(554, 192);
+            this.odbicie.Name = "odbicie";
+            this.odbicie.Size = new System.Drawing.Size(191, 54);
+            this.odbicie.TabIndex = 3;
+            this.odbicie.Text = "ODBICIE LUSTRZANE I";
+            this.odbicie.UseVisualStyleBackColor = true;
+            this.odbicie.Click += new System.EventHandler(this.odbicie_Click);
+            // 
+            // DWAODBICIE
+            // 
+            this.DWAODBICIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DWAODBICIE.BackgroundImage")));
+            this.DWAODBICIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DWAODBICIE.Location = new System.Drawing.Point(553, 267);
+            this.DWAODBICIE.Name = "DWAODBICIE";
+            this.DWAODBICIE.Size = new System.Drawing.Size(192, 54);
+            this.DWAODBICIE.TabIndex = 4;
+            this.DWAODBICIE.Text = "ODBICIE LUSTRZANE II";
+            this.DWAODBICIE.UseVisualStyleBackColor = true;
+            this.DWAODBICIE.Click += new System.EventHandler(this.DWAODBICIE_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -63,6 +103,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DWAODBICIE);
+            this.Controls.Add(this.odbicie);
+            this.Controls.Add(this.OBROT);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.WYSZUKAJ);
             this.Name = "Form1";
@@ -76,6 +119,9 @@
 
         private System.Windows.Forms.Button WYSZUKAJ;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button OBROT;
+        private System.Windows.Forms.Button odbicie;
+        private System.Windows.Forms.Button DWAODBICIE;
     }
 }
 
