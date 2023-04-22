@@ -33,5 +33,37 @@ namespace bitmapa
                 }
             }
         }
+
+        private void zielony_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = (Bitmap)pictureBox1.Image;
+            int width = bmp.Width;
+            int height = bmp.Height;
+
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    Color p = bmp.GetPixel(x, y);
+
+                    int a = p.A;
+                    int r = p.R;
+                    int g = p.G;
+                    int b = p.B;
+
+                    if (g > b + 20 && g > r + 20)
+                    {
+                        bmp.SetPixel(x, y, Color.FromArgb(a, r, g, b));
+
+                    }
+                    else
+                    {
+                        bmp.SetPixel(x, y, Color.FromArgb(a, 255, 255, 255));
+                    }
+
+                    pictureBox1.Image = bmp;
+                }
+            }
+        }
     }
 }

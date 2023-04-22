@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.WYSZUKAJ = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.zielony = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +57,19 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // zielony
+            // 
+            this.zielony.BackColor = System.Drawing.Color.Transparent;
+            this.zielony.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zielony.BackgroundImage")));
+            this.zielony.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.zielony.Location = new System.Drawing.Point(519, 24);
+            this.zielony.Name = "zielony";
+            this.zielony.Size = new System.Drawing.Size(215, 63);
+            this.zielony.TabIndex = 2;
+            this.zielony.Text = "TYLKO ZIELONY";
+            this.zielony.UseVisualStyleBackColor = false;
+            this.zielony.Click += new System.EventHandler(this.zielony_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -63,6 +77,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.zielony);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.WYSZUKAJ);
             this.Name = "Form1";
@@ -76,6 +91,7 @@
 
         private System.Windows.Forms.Button WYSZUKAJ;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button zielony;
     }
 }
 
