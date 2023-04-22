@@ -76,6 +76,29 @@
             // 
             // NEGATYW
             // 
+
+            this.odbicie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("odbicie.BackgroundImage")));
+            this.odbicie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odbicie.Location = new System.Drawing.Point(554, 192);
+            this.odbicie.Name = "odbicie";
+            this.odbicie.Size = new System.Drawing.Size(191, 53);
+            this.odbicie.TabIndex = 3;
+            this.odbicie.Text = "ODBICIE LUSTRZANE I";
+            this.odbicie.UseVisualStyleBackColor = true;
+            this.odbicie.Click += new System.EventHandler(this.odbicie_Click);
+            // 
+            // DWAODBICIE
+            // 
+            this.DWAODBICIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DWAODBICIE.BackgroundImage")));
+            this.DWAODBICIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DWAODBICIE.Location = new System.Drawing.Point(553, 267);
+            this.DWAODBICIE.Name = "DWAODBICIE";
+            this.DWAODBICIE.Size = new System.Drawing.Size(192, 54);
+            this.DWAODBICIE.TabIndex = 4;
+            this.DWAODBICIE.Text = "ODBICIE LUSTRZANE II";
+            this.DWAODBICIE.UseVisualStyleBackColor = true;
+            this.DWAODBICIE.Click += new System.EventHandler(this.DWAODBICIE_Click);
+
             this.NEGATYW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NEGATYW.BackgroundImage")));
             this.NEGATYW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NEGATYW.Location = new System.Drawing.Point(519, 348);
@@ -85,6 +108,7 @@
             this.NEGATYW.Text = "NEGATYW";
             this.NEGATYW.UseVisualStyleBackColor = true;
             this.NEGATYW.Click += new System.EventHandler(this.NEGATYW_Click);
+
             // 
             // OBROT
             // 
