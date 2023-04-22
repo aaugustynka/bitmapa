@@ -89,15 +89,15 @@
             // 
             // DWAODBICIE
             // 
-            this.DWAODBICIE.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DWAODBICIE.BackgroundImage")));
-            this.DWAODBICIE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DWAODBICIE.Location = new System.Drawing.Point(553, 267);
-            this.DWAODBICIE.Name = "DWAODBICIE";
-            this.DWAODBICIE.Size = new System.Drawing.Size(192, 54);
-            this.DWAODBICIE.TabIndex = 4;
-            this.DWAODBICIE.Text = "ODBICIE LUSTRZANE II";
-            this.DWAODBICIE.UseVisualStyleBackColor = true;
-            this.DWAODBICIE.Click += new System.EventHandler(this.DWAODBICIE_Click);
+            this.odbicie2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DWAODBICIE.BackgroundImage")));
+            this.odbicie2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.odbicie2.Location = new System.Drawing.Point(553, 267);
+            this.odbicie2.Name = "DWAODBICIE";
+            this.odbicie2.Size = new System.Drawing.Size(192, 54);
+            this.odbicie2.TabIndex = 4;
+            this.odbicie2.Text = "ODBICIE LUSTRZANE II";
+            this.odbicie2.UseVisualStyleBackColor = true;
+            this.odbicie2.Click += new System.EventHandler(this.odbicie2_Click);
 
             this.NEGATYW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NEGATYW.BackgroundImage")));
             this.NEGATYW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
