@@ -33,5 +33,41 @@ namespace bitmapa
                 }
             }
         }
+
+        private void OBROT_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(pictureBox1.Image);
+            bmp.RotateFlip(RotateFlipType.Rotate90FlipXY);
+            pictureBox1.Image = (Image)bmp;
+        }
+
+        private void odbicie_Click(object sender, EventArgs e)
+        {
+            Bitmap bmp = new Bitmap(pictureBox1.Image);
+            Bitmap tmp = new Bitmap(bmp.Width, bmp.Height);
+            for (int x = 0; x < bmp.Width; x++)
+            {
+                for (int y = 0; y < bmp.Height; y++)
+                {
+                    tmp.SetPixel(x, y, bmp.GetPixel(tmp.Width - x - 1, y));
+                }
+            }
+            pictureBox1.Image = (Image)tmp;
+        }
+
+        private void DWAODBICIE_Click(object sender, EventArgs e)
+        {
+
+            Bitmap bmp = new Bitmap(pictureBox1.Image);
+            Bitmap tmp = new Bitmap(bmp.Width, bmp.Height);
+            for (int x = 0; x < bmp.Width; x++)
+            {
+                for (int y = 0; y < bmp.Height; y++)
+                {
+                    tmp.SetPixel(x, y, bmp.GetPixel(x, tmp.Height - y - 1));
+                }
+            }
+            pictureBox1.Image = (Image)tmp;
+        }
     }
 }
