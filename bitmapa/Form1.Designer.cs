@@ -32,6 +32,7 @@
             this.WYSZUKAJ = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.zielony = new System.Windows.Forms.Button();
+            this.NEGATYW = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +71,18 @@
             this.zielony.UseVisualStyleBackColor = false;
             this.zielony.Click += new System.EventHandler(this.zielony_Click);
             // 
+            // NEGATYW
+            // 
+            this.NEGATYW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NEGATYW.BackgroundImage")));
+            this.NEGATYW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NEGATYW.Location = new System.Drawing.Point(519, 348);
+            this.NEGATYW.Name = "NEGATYW";
+            this.NEGATYW.Size = new System.Drawing.Size(215, 63);
+            this.NEGATYW.TabIndex = 3;
+            this.NEGATYW.Text = "NEGATYW";
+            this.NEGATYW.UseVisualStyleBackColor = true;
+            this.NEGATYW.Click += new System.EventHandler(this.NEGATYW_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -77,6 +90,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.NEGATYW);
             this.Controls.Add(this.zielony);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.WYSZUKAJ);
@@ -92,6 +106,7 @@
         private System.Windows.Forms.Button WYSZUKAJ;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button zielony;
+        private System.Windows.Forms.Button NEGATYW;
     }
 }
 
