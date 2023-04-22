@@ -34,40 +34,64 @@ namespace bitmapa
             }
         }
 
-        private void OBROT_Click(object sender, EventArgs e)
+        private void zielony_Click(object sender, EventArgs e)
         {
-            Bitmap bmp = new Bitmap(pictureBox1.Image);
-            bmp.RotateFlip(RotateFlipType.Rotate90FlipXY);
-            pictureBox1.Image = (Image)bmp;
-        }
+            Bitmap bmp = (Bitmap)pictureBox1.Image;
+            int width = bmp.Width;
+            int height = bmp.Height;
 
-        private void odbicie_Click(object sender, EventArgs e)
-        {
-            Bitmap bmp = new Bitmap(pictureBox1.Image);
-            Bitmap tmp = new Bitmap(bmp.Width, bmp.Height);
-            for (int x = 0; x < bmp.Width; x++)
+            for (int y = 0; y < height; y++)
             {
-                for (int y = 0; y < bmp.Height; y++)
+                for (int x = 0; x < width; x++)
                 {
-                    tmp.SetPixel(x, y, bmp.GetPixel(tmp.Width - x - 1, y));
+                    Color p = bmp.GetPixel(x, y);
+
+                    int a = p.A;
+                    int r = p.R;
+                    int g = p.G;
+                    int b = p.B;
+
+                    if (g > b + 20 && g > r + 20)
+                    {
+                        bmp.SetPixel(x, y, Color.FromArgb(a, r, g, b));
+
+                    }
+                    else
+                    {
+                        bmp.SetPixel(x, y, Color.FromArgb(a, 255, 255, 255));
+                    }
+
+                    pictureBox1.Image = bmp;
                 }
             }
-            pictureBox1.Image = (Image)tmp;
         }
 
-        private void DWAODBICIE_Click(object sender, EventArgs e)
+        private void NEGATYW_Click(object sender, EventArgs e)
         {
+            Bitmap bmp = (Bitmap)pictureBox1.Image;
+            int width = bmp.Width;
+            int height = bmp.Height;
 
-            Bitmap bmp = new Bitmap(pictureBox1.Image);
-            Bitmap tmp = new Bitmap(bmp.Width, bmp.Height);
-            for (int x = 0; x < bmp.Width; x++)
+            for (int y = 0; y < height; y++)
             {
-                for (int y = 0; y < bmp.Height; y++)
+                for (int x = 0; x < width; x++)
                 {
-                    tmp.SetPixel(x, y, bmp.GetPixel(x, tmp.Height - y - 1));
+                    Color p = bmp.GetPixel(x, y);
+
+                    int a = p.A;
+                    int r = p.R;
+                    int g = p.G;
+                    int b = p.B;
+
+                    r = 255 - r;
+                    g = 255 - g;
+                    b = 255 - b;
+
+                    bmp.SetPixel(x, y, Color.FromArgb(a, r, g, b));
+
+                    pictureBox1.Image = bmp;
                 }
             }
-            pictureBox1.Image = (Image)tmp;
         }
     }
 }
