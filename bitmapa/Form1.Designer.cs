@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.WYSZUKAJ = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // WYSZUKAJ
@@ -38,12 +40,21 @@
             this.WYSZUKAJ.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("WYSZUKAJ.BackgroundImage")));
             this.WYSZUKAJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.WYSZUKAJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.WYSZUKAJ.Location = new System.Drawing.Point(52, 322);
+            this.WYSZUKAJ.Location = new System.Drawing.Point(23, 348);
             this.WYSZUKAJ.Name = "WYSZUKAJ";
             this.WYSZUKAJ.Size = new System.Drawing.Size(200, 65);
             this.WYSZUKAJ.TabIndex = 0;
             this.WYSZUKAJ.Text = "WYSZUKAJ";
             this.WYSZUKAJ.UseVisualStyleBackColor = false;
+            this.WYSZUKAJ.Click += new System.EventHandler(this.WYSZUKAJ_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(420, 318);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -52,9 +63,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.WYSZUKAJ);
             this.Name = "Form1";
             this.Text = "BITMAPA";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -62,6 +75,7 @@
         #endregion
 
         private System.Windows.Forms.Button WYSZUKAJ;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
